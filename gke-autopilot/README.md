@@ -126,7 +126,7 @@ helm install grafana-agent grafana/grafana-agent \
 - Bin packing efficiency
 - Spot/Preemptible node usage
 
-## Grafana Agent Configuration
+## 🔧 Grafana Agent Configuration
 
 The Grafana Agent is deployed as a DaemonSet to collect metrics from:
 
@@ -135,7 +135,7 @@ The Grafana Agent is deployed as a DaemonSet to collect metrics from:
 3. **Kubelet** - Pod and container stats
 4. **Application Pods** - Custom metrics via ServiceMonitors
 
-##  🎯 Supported Integrations
+## 🎯 Supported Integrations
 
 - ✅ Prometheus metrics
 - ✅ Kubernetes logs via Loki
@@ -150,7 +150,7 @@ The Grafana Agent is deployed as a DaemonSet to collect metrics from:
 - Network policies for agent communication
 - TLS encryption for remote write endpoints
 
-## Customization
+## 🔧 Customization
 
 ### Adding Custom Metrics
 
@@ -164,7 +164,7 @@ The Grafana Agent is deployed as a DaemonSet to collect metrics from:
 2. Apply via Grafana Cloud UI or Terraform
 3. Configure notification channels
 
-## Cost Considerations
+## 💰 Cost Considerations
 
 ### Grafana Cloud Pricing
 - Free tier: 10K series, 50GB logs, 50GB traces
@@ -176,7 +176,7 @@ The Grafana Agent is deployed as a DaemonSet to collect metrics from:
 - Filter unnecessary labels
 - Use recording rules for complex queries
 
-## Monitoring Best Practices
+## ✅ Monitoring Best Practices
 
 1. **Start with defaults** - Use provided dashboards and customize
 2. **Set meaningful alerts** - Focus on actionable alerts
@@ -184,7 +184,7 @@ The Grafana Agent is deployed as a DaemonSet to collect metrics from:
 4. **Regular reviews** - Review and optimize metric collection
 5. **Document changes** - Keep README and docs updated
 
-## Troubleshooting
+## 🔧 Troubleshooting
 
 ### Grafana Agent not sending metrics
 
@@ -209,14 +209,6 @@ kubectl run -it --rm debug --image=curlimages/curl --restart=Never -- \
 
 See [TROUBLESHOOTING.md](docs/TROUBLESHOOTING.md) for more details.
 
-## Contributing
-
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Test in a development cluster
-5. Submit a pull request
-
 ## 📚 Resources
 
 - [GKE Autopilot Documentation](https://cloud.google.com/kubernetes-engine/docs/concepts/autopilot-overview)
@@ -224,7 +216,7 @@ See [TROUBLESHOOTING.md](docs/TROUBLESHOOTING.md) for more details.
 - [Grafana Agent Documentation](https://grafana.com/docs/agent/latest/)
 - [Kubernetes Monitoring Guide](https://kubernetes.io/docs/tasks/debug/debug-cluster/resource-metrics-pipeline/)
 
-## License
+## 📝 License
 
 MIT License - see [LICENSE](LICENSE) file for details
 
@@ -234,6 +226,6 @@ MIT License - see [LICENSE](LICENSE) file for details
 - Discussions: [GitHub Discussions](https://github.com/your-org/gke-autopilot-grafana-monitoring/discussions)
 - Email: devops@yourcompany.com
 
-## Changelog
+## 🔄 Changelog
 
 See [CHANGELOG.md](CHANGELOG.md) for version history and updates.
