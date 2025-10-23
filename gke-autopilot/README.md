@@ -2,7 +2,7 @@
 
 This repository contains the configuration and deployment files to monitor Google Kubernetes Engine (GKE) Autopilot clusters using Grafana Cloud.
 
-## Architecture Overview
+## 🎯 Architecture Overview
 
 ```
 GKE Autopilot Cluster
@@ -18,7 +18,7 @@ GKE Autopilot Cluster
     └── Tempo (Traces)
 ```
 
-## Prerequisites
+## ✅ Prerequisites
 
 - GKE Autopilot cluster running
 - Grafana Cloud account ([Sign up here](https://grafana.com/auth/sign-up/create-user))
@@ -26,7 +26,7 @@ GKE Autopilot Cluster
 - `gcloud` CLI installed and authenticated
 - `helm` 3.x installed
 
-## Quick Start
+## 🚀 Quick Start
 
 ### 1. Clone this repository
 
@@ -75,7 +75,7 @@ helm install grafana-agent grafana/grafana-agent \
 ./scripts/import-dashboards.sh
 ```
 
-## Repository Structure
+## 📁 Repository Structure
 
 ```
 .
@@ -106,7 +106,7 @@ helm install grafana-agent grafana/grafana-agent \
     └── DASHBOARDS.md                # Dashboard documentation
 ```
 
-## Key Metrics Monitored
+## ⚙️ Key Metrics Monitored
 
 ### Cluster Metrics
 - Node resource utilization (CPU, Memory, Disk)
@@ -135,7 +135,7 @@ The Grafana Agent is deployed as a DaemonSet to collect metrics from:
 3. **Kubelet** - Pod and container stats
 4. **Application Pods** - Custom metrics via ServiceMonitors
 
-## Supported Integrations
+##  🎯 Supported Integrations
 
 - ✅ Prometheus metrics
 - ✅ Kubernetes logs via Loki
@@ -143,7 +143,7 @@ The Grafana Agent is deployed as a DaemonSet to collect metrics from:
 - ✅ Custom application metrics
 - ✅ Alert rules and notifications
 
-## Security Considerations
+## ⚠️ Security Considerations
 
 - Secrets stored in Kubernetes Secrets (base64 encoded)
 - RBAC roles with minimum required permissions
@@ -217,7 +217,7 @@ See [TROUBLESHOOTING.md](docs/TROUBLESHOOTING.md) for more details.
 4. Test in a development cluster
 5. Submit a pull request
 
-## Resources
+## 📚 Resources
 
 - [GKE Autopilot Documentation](https://cloud.google.com/kubernetes-engine/docs/concepts/autopilot-overview)
 - [Grafana Cloud Documentation](https://grafana.com/docs/grafana-cloud/)
@@ -228,7 +228,7 @@ See [TROUBLESHOOTING.md](docs/TROUBLESHOOTING.md) for more details.
 
 MIT License - see [LICENSE](LICENSE) file for details
 
-## Support
+## 🙋 Support
 
 - Issues: [GitHub Issues](https://github.com/your-org/gke-autopilot-grafana-monitoring/issues)
 - Discussions: [GitHub Discussions](https://github.com/your-org/gke-autopilot-grafana-monitoring/discussions)
